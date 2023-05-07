@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "prepare": "husky install"
+    },
+    "devDependencies": {
+        "husky": "^8.0.0"<%if (eslint) {%>,
+        "lint-staged": "^13.2.2"<%}%><%if (prettier) {%>,
+        "pretty-quick": "^3.1.3"<%}%>
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "scripts": {
+        "cz": "git-cz"<%if (commitlint['standard-version']) {%>,
+        "sv": "standard-version --dry-run"<%}%>
+    },
+    "config": {
+        "commitizen": {
+            "path": "@commitlint/cz-commitlint"
+        }
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.6.1",
+        "@commitlint/config-conventional": "^17.6.1",
+        "@commitlint/cz-commitlint": "^17.5.0",
+        "commitizen": "^4.3.0"<%if (commitlint['standard-version']) {%>,
+        "standard-version": "^9.5.0"<%}%>
+    }
+}
